@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webseite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+    <main>
+        <section id="home" class="first-section">
+            <div id="buttons-container">
+                <button class="dark-button" onclick="scrollToSection('about')">Über mich</button>
+                <button class="dark-button" onclick="scrollToSection('skills')">Fähigkeiten</button>
+                <button class="dark-button" onclick="scrollToSection('projects')">Projekte</button>
+                <button class="dark-button" onclick="scrollToSection('contact')">Kontakt</button>
+            </div>
+            <div id="typing-text-container">
+
+                <h1>Hallo, ich bin</h1>
+                <p id="typing-text"></p>
+                <h1>IMS Student</h1>
+            </div>
+
+        </section>
+        <section id="about" class="fade-in-element">
+            <h2>Über mich</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="BildLeandro1.jpg" class="fade-in-element" alt="Ein Bild">
+                </div>
+                <div class="education-box">
+                    <div class="title-box">
+                        <h1>Meine Persona</h1>
+                        <div id="about-me-text">
+                            <p1>
+                                Meine Freunde und meine Freundin beschreiben mich als zuverlässig und hilfsbereit.
+                            </p1>
+                         
+
+                            <p1>
+                                Diese Eigenschaften spiegeln sich auch in meiner Leidenschaft wider, mich stetig weiterzuentwickeln.
+                            </p1>
+                         
+                            <br />
+                            <p1>
+                                In meiner Freizeit zieht es mich immer dazu, mir neue Fähigkeiten anzueignen und Neues zu lernen.
+                            </p1>
+  
+     
+                            <p1>
+                                Getrieben von meiner Neugier und Zielstrebigkeit, bin ich konstant auf der Suche nach neuen Herausforderungen.
+                            </p1>
+                            <br />
+
+                            <p1>
+                                In diesem stetigen Lernprozess haben sich besonders mein logisches Denken und meine Kommunikationsfähigkeit als wertvolle Stärken herausgestellt
+                            </p1>
+                            </div>
+                        </div>
+                    <!-- Hier kannst du den Inhalt für die Ausbildungsbox einfügen -->
+                </div>
+                <div class="textbox">
+                    <h1>Ausbildung</h1>
+                    <p2>Informatikmittelschule in Baden</p2>
+                    <br />
+                    <br />
+                    <p1>2 Jahre Abgeschlossen</p1>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills">
+            <h2>Fähigkeiten</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img id="skills-img" src="Psprachen.jpg" alt="My Skills">
+                </div>
+                <section id="skills">
+
+                    <div class="skill">
+                        <p>HTML5</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>CSS3</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Javascript</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%;"></div>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>C#</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>MySQL</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="skill">
+                        <p>PHP</p>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%;"></div>
+                            <span class="skill-percent">40%</span>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Neue Sektion "Projekte" -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Projekte</h2>
+                </div>
+
+                <h2 class="section-title"></h2>
+
+                <a href="https://portfolio.bbbaden.ch/view/view.php?t=02bf12d08b777141b58e">
+                    <img src="HTMLCSS.png" alt="Projekt 1" width="200" height="200">
+                </a>
+
+                <a href="https://gitlab.bbbaden.ch/L.Schmidt.inf20/oop-lb320">
+                    <img src="Csharp.png" alt="Projekt 2" width="200" height="200">
+                </a>
+
+                <a href="https://portfolio.bbbaden.ch/view/view.php?t=70283437ac40d448e10c">
+                    <img src="JS.jpg" alt="Projekt 3" width="200" height="200">
+                </a>
+
+                <a href="https://portfolio.bbbaden.ch/view/view.php?t=35960ddf7d6929c17d6c">
+                    <img src="SQL.png" alt="Projekt 4" width="200" height="200">
+                </a>
+
+                <a href="https://portfolio.bbbaden.ch/view/view.php?t=75A4rXQT8gD9H3EFYOjs">
+                    <img src="PS.png" alt="Projekt 5" width="200" height="200">
+                </a>
+                <p>Klick uns!</p>
+                <p>Diese Webseite zeigt mein HTML5 und CSS3 können.</p>
+                <p>Objekt Orientiertes Programmieren Projekt (Github Link) zeigt mein C# können.</p>
+                <p>Tic-Tac-Toe Spiel zeigt mein Javascript können.</p>
+                <p>Erweiterte Abfragen stellen, Datenbanken updaten, Foreign Keys erstellen und Rechte an Benutzer geben zeigen mein MySQL können.</p>
+                <p>Einen Automatischen Ablauf erstellen zeigt mein Powershell können.</p>
+            </div>
+
+           
+            
+        </section>
+
+
+
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Schreibe mir etwas ich werde dir in kürze Antworten.</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Senden</button>
+            </form>
+            <div id="confirmation"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-name">Leandro Schmidt</p>
+        <p class="footer-title">Applikations Entwickler in Formation</p>
+        <div class="footer-image">
+            <img src=".jpg" alt="Ihr Bild">
+        </div>
+        <div class="footer-buttons">
+            <a href="#home">Start</a>
+            <a href="#about">Über mich</a>
+            <a href="#skills">Fähigkeiten</a>
+            <a href="#projects">Projekte</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

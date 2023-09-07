@@ -1,0 +1,421 @@
+/* Hier kannst du dein CSS-Styling hinzufügen */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #222222; /* Dunklerer Header und Footer */
+    padding: 10px;
+}
+
+h1, h2, p {
+    color: #ffcc00; /* Gelber Text für Überschriften und Absätze */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Hier kannst du dein CSS-Styling hinzufügen */
+
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+}
+
+#home {
+    background-image: url('Home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #333333;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #333333;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px; /* Abstand von oben */
+    height: 100vh;
+    position: relative; /* Positionierung für die Buttons */
+}
+
+#buttons-container {
+    display: flex;
+    gap: 20px; /* Abstand zwischen den Buttons */
+    position: absolute; /* Positionierung der Buttons */
+    top: 0; /* Oben ausrichten */
+    left: 50%; /* Horizontal zentrieren */
+    transform: translateX(-50%); /* Zurückverschieben, um horizontal zu zentrieren */
+}
+
+.dark-button {
+    background-color: transparent;
+    border: none;
+    color: yellow; /* Farbe auf Gelb ändern */
+    font-size: 40px; /* Größe des Texts erhöhen */
+    cursor: pointer;
+    width:300px;
+}
+
+    .dark-button:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+#typing-text-container {
+    overflow: hidden;
+}
+
+#typing-text {
+    white-space: nowrap;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    font:xx-large;
+    font-weight:bold;
+}
+
+.fadeIn {
+    animation: fadeIn 2s ease-in-out forwards, fadeOut 2s ease-in-out 2s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.first-section {
+    background-color: #333333;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text {
+    margin-bottom: 5cm;
+}
+
+/* ... andere CSS-Stile ... */
+
+#about {
+    background-color: #111133;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Ändert die Ausrichtung auf vertikal */
+    align-items: center; /* Horizontal zentrieren */
+    padding: 50px;
+    text-align: center;
+    
+}
+
+/* Für Fade-In */
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+
+
+
+
+.about-content {
+    display: flex;
+    align-items: center; /* Bild und Boxen vertikal zentrieren */
+}
+
+.about-image img {
+    max-width: 400px; /* Maximale Breite des Bildes */
+    margin-right: 100px; /* Abstand zwischen Bild und Boxen */
+    margin-bottom: 140px;
+
+}
+
+.education-box {
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    border: 2px solid #ffcc00; /* Weißer Rand um die Ausbildungsbox */
+    padding: 40px; /* Innenabstand der Ausbildungsbox */
+    background-color: transparent; /* Transparenter Hintergrund */
+    color: white; /* Textfarbe */
+    text-align: center; /* Text zentrieren */
+    margin-right: 50px;
+    margin-bottom: 150px;
+}
+
+.textbox {
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
+    border: 2px solid #ffcc00; /* Weißer Rand um die Textbox */
+    padding: 20px; /* Innenabstand der Textbox */
+    background-color: transparent; /* Transparenter Hintergrund */
+    color: white; /* Textfarbe */
+    /* Text rechtsbündig ausrichten */
+    margin-left: 0px;
+    margin-bottom: 390px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#about h2 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20px; /* Text oben platzieren */
+    margin-bottom: 150px; /* Abstand zum nachfolgenden Inhalt hinzufügen */
+}
+
+#about p2 {
+    font-weight: lighter;
+    text-underline-offset:initial;
+}
+
+
+
+.about-image img {
+    max-width: 400px; /* Maximale Breite des Bildes */
+    margin-right: 100px; /* Abstand zwischen Bild und Boxen */
+    margin-bottom: 140px;
+}
+
+#skills {
+    background-color: #111133;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+    .skill p {
+        font-weight: bold;
+        margin: 0;
+    }
+
+.skill-bar {
+    width: 300px; /* von 100% zu 90% geändert, um die Bar länger zu machen */
+    height: 20px; /* von 30px zu 20px geändert, um die Bar weniger dick zu machen */
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ffcc00; /* Balkenfarbe */
+    transition: width 1s ease-in-out; /* Animationsübergang für die Breite */
+}
+
+#skills h2 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20px; /* Text oben platzieren */
+    margin-bottom: 0px; /* Abstand zum nachfolgenden Inhalt hinzufügen */
+}
+
+#skills-img {
+    max-width: 500px; /* oder eine andere Größe, die du bevorzugst */
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+#projects img {
+    margin: 10px;
+    transition: transform .2s;
+    width: 240px;
+}
+
+    #projects img:hover {
+        transform: scale(1.1);
+    }
+
+#projects h2 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 0px; /* Text oben platzieren */
+    margin-bottom: 100px; /* Abstand zum nachfolgenden Inhalt hinzufügen */
+}
+/* Hier dein CSS-Styling hinzufügen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111133;
+}
+
+/* Füge dieses CSS in deine styles.css Datei hinzu */
+
+/* Dunkler Hintergrund für das Kontaktformular */
+#contact {
+    background-color: #111133;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff; /* Textfarbe auf Weiß ändern */
+}
+
+/* Graue Platzhalter für die Eingabefelder */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #ccc;
+}
+
+/* Weißer Text für Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff; /* Textfarbe auf Weiß ändern */
+}
+
+/* Ändere die Hintergrundfarbe und den Border der Eingabefelder */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 3px;
+    color: #fff; /* Textfarbe auf Weiß ändern */
+}
+
+/* Dunklerer Button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+
+#contact h2 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 20px; /* Text oben platzieren */
+    margin-bottom: 50px; /* Abstand zum nachfolgenden Inhalt hinzufügen */
+}
+
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.footer-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.footer-image {
+  position: absolute; /* Absolute Positionierung innerhalb des Footers */
+  right: 0;           /* Rechtsbündig mit dem Footer */
+  bottom: 0;          /* Unten im Footer */
+}
+
+.footer-image img {
+  width: 170px;       /* Breite des Bildes */
+  height: auto;       /* Höhe automatisch anpassen */
+}
+
+footer {
+    position: relative; /* Relative Positionierung */
+    /* Ihr bestehender Code für den Footer */
+}
+
+.footer-title {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-buttons {
+    margin-top: 20px;
+}
+
+    .footer-buttons a {
+        color: #ffffff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+.image img {
+    width: 100px; /* Größe des Bildes anpassen */
+}
+
+}
+
+/* ... andere CSS-Stile ... */
+
+
+
+
+
+
+
+
+
+/* Weitere Anpassungen hier */
