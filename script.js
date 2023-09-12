@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
+
+
         function deleteChars() {
             if (charIndex > 0) {
                 typingTextElement.textContent = text.substring(0, charIndex - 1);
@@ -86,7 +88,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 element.classList.remove('visible');
             }
         });
+
     });
+
+    window.onload = function () {
+        const shapes = ["circle", "square", "rectangle", "star", "triangle", "ellipse"];
+        const section = document.querySelector(".first-section");
+
+        for (let i = 0; i < 25; i++) { // Erzeugt 100 Formen.
+            let shape = document.createElement("div");
+            let randomShape = shapes[Math.floor(Math.random() * shapes.length)];
+            let randomLeft = Math.floor(Math.random() * window.innerWidth);
+            let randomTop = Math.floor(Math.random() * window.innerHeight);
+            shape.style.left = randomLeft + "px";
+            shape.style.top = randomTop + "px";
+
+            shape.classList.add("shape");
+            shape.classList.add(randomShape);
+            section.appendChild(shape);
+        }
+    }
+
+
 
     // Funktion, um festzustellen, ob ein Element im Viewport ist
     function isInViewport(el) {
@@ -106,6 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
 
 
     // Kontaktformular
