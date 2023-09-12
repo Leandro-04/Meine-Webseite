@@ -91,23 +91,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    window.onload = function () {
-        const shapes = ["circle", "square", "rectangle", "star", "triangle", "ellipse"];
-        const section = document.querySelector(".first-section");
+    document.addEventListener("DOMContentLoaded", function () {
+        const section = document.querySelector('.first-section');
 
-        for (let i = 0; i < 25; i++) { // Erzeugt 100 Formen.
-            let shape = document.createElement("div");
-            let randomShape = shapes[Math.floor(Math.random() * shapes.length)];
-            let randomLeft = Math.floor(Math.random() * window.innerWidth);
-            let randomTop = Math.floor(Math.random() * window.innerHeight);
-            shape.style.left = randomLeft + "px";
-            shape.style.top = randomTop + "px";
+        function createShape() {
+            const shape = document.createElement('div');
+            const shapeType = Math.floor(Math.random() * 3);
+            const startPosX = Math.random() * section.clientWidth;
+            const startPosY = Math.random() * section.clientHeight;
+            const size = Math.random() * 50 + 20;  // Größe zwischen 20 und 70
 
-            shape.classList.add("shape");
-            shape.classList.add(randomShape);
+            shape.classList.add('floating-shape');
+            shape.style.top = `${startPosY}px`;
+            shape.style.left = `${startPosX}px`;
+            shape.style.width = `${size}px`;
+            shape.style.height = `${size}px`;
+
+            switch (shapeType) {
+                case 0:  // Kreis (standardmäßig)
+                    break;
+                case 1:
+                    shape.classList.add('shape-square');
+                    break;
+                case 2:
+                    shape.classList.add('shape-star');
+                    break;
+                // Fügen Sie hier ggf. weitere Formen hinzu
+            }
+
             section.appendChild(shape);
+
+            // Entfernt die Form nach 5 Sekunden
+            setTimeout(() => {
+                section.removeChild(shape);
+            }, 5000);
         }
-    }
+
+        // Erstellt alle 700 Millisekunden eine neue Form
+        setInterval(createShape, 700);
+    });
+
 
 
 

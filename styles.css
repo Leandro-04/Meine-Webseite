@@ -11,69 +11,36 @@ html, body {
 }
 
 .first-section {
-    position: relative;
-    background-color: #111133;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  background-color: #111133;
 }
 
-@keyframes animateShapes {
-    0% {
-        transform: translateY(0) scale(0);
-        opacity: 0.5;
-    }
-
-    50% {
-        transform: translateY(-30px) scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(0) scale(0);
-        opacity: 0.5;
-    }
+@keyframes waveAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.first-section div.shape {
+.wave-bg {
     position: absolute;
-    background-color: #ffcc00;
-    animation: animateShapes 5s infinite;
-    opacity: 0;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #ffcc00, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133, #111133);
+    background-size: 300% 300%;
+    animation: waveAnimation 6s infinite;
+    z-index: -1; /* Damit es hinter dem Inhalt bleibt */
 }
 
-.circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-}
 
-.square {
-    width: 20px;
-    height: 20px;
-}
-
-.rectangle {
-    width: 30px;
-    height: 15px;
-}
-
-.star {
-    clip-path: polygon( 50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35% );
-    width: 25px;
-    height: 25px;
-}
-
-.triangle {
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    width: 20px;
-    height: 20px;
-}
-
-.ellipse {
-    width: 40px;
-    height: 20px;
-    border-radius: 50%;
-}
 
 
 
@@ -124,6 +91,7 @@ section {
     text-align: center;
     padding: 50px;
     color: #ffffff;
+    z-index: 2;
 }
 
 #home {
@@ -139,7 +107,7 @@ section {
     padding-top: 10px; /* Abstand von oben */
     height: 100vh;
     position: relative; /* Positionierung für die Buttons */
-    z-index: 2;
+    z-index: 4;
 }
 
 #buttons-container {
