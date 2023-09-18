@@ -186,19 +186,27 @@
         <section id="contact">
             <h2>Kontakt</h2>
             <p>Schreibe mir etwas ich werde dir in kürze Antworten.</p>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Nachricht:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Senden</button>
+            <br />
+            <br />
+            <form action="https://formspree.io/f/xgejzndb"
+                  method="POST">
+                <label>
+                    Deine E-mail:
+                    <br />
+                    <br />
+                    <input type="email" name="email">
+                </label>
+                <br />
+                <br />
+                <label>
+                    Deine Nachricht:
+                    <br />
+                    <br />
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
             </form>
-            <div id="confirmation"></div>
         </section>
 
     </main>
